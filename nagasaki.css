@@ -1,0 +1,188 @@
+ body{
+            background: #7A8F9D;
+        }
+        .container{
+            width:750px;
+            margin: 250px  auto 0 auto;
+        }
+        .ryuk{
+            width:100px;
+            margin-left:50px;
+            animation: mymoveRyuk 60s infinite;
+        }
+        .ryuk .face{
+            background: #F4F4F4;
+            width:60px;
+            height:50px;
+            border-radius: 47%;
+            text-align: center;
+            position: relative;
+            box-shadow: inset 2px 5px #D3D3D3;
+        }
+        .ryuk .face:before{
+           content: '';
+            position: absolute;
+            background: #F4F4F4;
+            background: linear-gradient(90deg, #F4F4F4 90%, #4C4946 10%);
+            background-size: 6px 10px;
+            width: 30px;
+            height: 10px;
+            text-align: center;
+            top: 46px;
+            left: 17px;
+            z-index: -1;
+        }     
+        .ryuk .face .cover {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #4C4946;
+            z-index:-3;
+            top:-20px;
+            left:-10px;
+        }
+        .ryuk .face .cover:before {
+            content:'';
+            position: absolute;
+            z-index: -3;
+            top: 10px;
+            left: -34px;
+            width: 87px;
+            height: 89px;
+            border-radius: 50%;
+            box-shadow: 24px -12px 0 0 #4C4946;
+        }      
+        .ryuk .face .eye{
+            background: #4C4946;
+            width:10px;
+            height:13px;
+            display: inline-block;
+            margin: 17px 0 0 8px;
+            border-radius: 50%;
+        }
+        .ryuk .cloth{
+            border-bottom: 196px solid #4C4946;
+            border-left: 50px solid transparent;
+                border-right: 17px solid transparent;
+            height: 0;
+            width: 49px;
+            margin-left: -46px;
+            position: absolute;     
+            z-index: -3;
+        }
+        .ryuk .cloth:before {
+            border-radius: 20px / 5px;
+            content: '';
+            display: block;
+            position: absolute;
+             border: 10px solid transparent;
+            border-bottom-color: #4C4946;
+            bottom: 0px;
+            left: -57px;
+            z-index: -2;
+            top: 176px;
+        }
+        .ryuk .cloth .right{
+            background: #F4F4F4;
+            width: 20px;
+            height: 10px;
+            display: inline-block;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin-top: 106px;
+            margin-left:-10px;
+        }
+        .ryuk .cloth .left span{
+            display: inline-block;
+            position: absolute;
+            width:110px;
+            top: 0px;
+            left:20px;
+            height:100px;
+            overflow: hidden;
+        }
+        .ryuk .cloth .left span:after{
+            content: '';
+            position: absolute;
+            top: -25px;
+            left: 29px;
+            width: 102px;
+            height: 58px;
+            border-radius: 50%;
+            box-shadow: 8px 17px 0 12px #4C4946;
+            z-index: -1;
+        }
+        .ryuk .cloth .left:before{
+            content:'';
+            background: #F4F4F4;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            top: 33px;
+            left:120px;
+            position: absolute;
+        }
+        .ryuk .scythe{
+            width: 200px;
+            height: 350px;
+            display: inline-block;
+            margin: -156px 0 0 -65px;
+            position: relative;
+            overflow: hidden;
+        }
+        .ryuk .scythe:before{
+            content:'';
+            position: absolute;
+            width: 300px;
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 95px -24px 0 0 #ECEEF1;
+            top: 25px;
+            left: -90px;
+        }
+        .ryuk .scythe:after{
+            content:'';
+            position: absolute;
+            width: 4px;
+            height: 355px;
+            background: #8A6138;
+            right:0;
+            top:1px;
+            border-radius: 3px;
+        }
+        .progress-bar{
+            width:750px;
+            height:10px;
+            border-radius: 10px;
+            background: #ABE3F7;
+        }
+        .progress-bar span{
+            position: absolute;
+            display: inline-block;
+            width:185px;
+            height:10px;
+            border-radius: 10px;
+            background: #20C20E;
+            animation: mymove 60s infinite;
+        }
+        
+        .ryuk-text{
+            color:#fff;
+            font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+            animation: mymoveRyuk 60s infinite;
+            margin-top: 30px;
+            font-size:20px;
+        }
+        @keyframes mymove {
+            0% {width:185px}
+            90% {width:650px}
+            100%{width:185px}
+        }
+        @keyframes mymoveRyuk {
+            0% {margin-left:50px;}
+            90% {margin-left:515px;}
+            100%{margin-left:50px;}
+        }
+
+        
